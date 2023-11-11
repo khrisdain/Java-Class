@@ -1,14 +1,17 @@
+//if and else statements
 public class FirstClass {
     public static void main(String[] args) {
-        //Operator Precedence and Operator challenge
-        double kilometers = ( 100 * 1.609344); //expression
+        boolean gameOver = true;
+        int score = 5000;
+        int levelCompleted = 5;
+        int bonus = 100;
 
-        int highScore = 50;
-        if(highScore > 25) {
-            highScore = 1000 + highScore;
+        if (score < 5000 && score > 1000) {
+            System.out.println("Your score was lesser that required");
+        }else if( score < 1000 ) {
+            System.out.println(" Your score is lesser than 1000");
+        }else {
+            System.out.println("Got here");
         }
-        System.out.println(highScore);
     }
 }
-
-//Resting today
